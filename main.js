@@ -16,7 +16,8 @@ function createWindow () {
   // win.setIgnoreMouseEvents(true)
   win.webContents.openDevTools();
   // 加载index.html文件
-  win.loadFile('index.html')
+  win.loadURL("http://localhost:8080/")
+  // win.loadFile('dist/index.html')
 }
 
 app.on('ready', createWindow)
