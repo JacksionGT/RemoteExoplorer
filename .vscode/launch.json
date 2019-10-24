@@ -4,7 +4,18 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug Webpack Configaration",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run",
+          "debug"
+        ],
+        "port": 5858
+      },
+      {
             "name": "Debug Main Process",
             "type": "node",
             "request": "launch",
