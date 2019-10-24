@@ -35,9 +35,13 @@ class SiderBar extends Component {
                             <span>about</span>
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/dashboard">
+                            <span className="iconfont iconperson2"></span>
+                            <span>dashboard</span>
+                        </Link>
+                    </li>
                 </ul>
-                {/* 
-                <Link to="/dashboard">dashboard</Link> */}
             </div>
         )
     }

@@ -7,7 +7,6 @@ import {
     Link
 } from "react-router-dom";
 
-
 import { SideBar, ShowVersion } from './index'
 
 class Layout extends Component {
@@ -23,7 +22,7 @@ class Layout extends Component {
                                 <ShowVersion />
                             </Route>
                             <Route path="/about">
-                                <h1>about</h1>
+                                <h1>关于界面</h1>
                             </Route>
                             <Route path="/dashboard">
                                 <h1>Dashboard</h1>

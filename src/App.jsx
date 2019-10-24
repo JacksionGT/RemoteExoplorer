@@ -11,7 +11,6 @@ import reducer from './store/reducer'
 
 const store = createStore(reducer);
 
-
 class App extends Component {
   render() {
     return (
