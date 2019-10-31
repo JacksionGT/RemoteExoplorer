@@ -5,7 +5,7 @@ class TitleBar extends Component {
        return (
         <div className="bar">
             <h1>
-                <span>标题</span>
+                <span>Remote Explorer —— 云存储文件管理器</span>
                 <ExitButton />
             </h1>
         </div>

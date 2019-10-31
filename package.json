@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "electron": "^6.0.12",
+    "mdui": "^0.4.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",

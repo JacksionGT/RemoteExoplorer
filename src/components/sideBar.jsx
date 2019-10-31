@@ -25,8 +25,14 @@ class SiderBar extends Component {
                     </li>
                     <li>
                         <Link to="/">
-                            <span className="iconfont iconmenu"></span>
-                            <span>首页</span>
+                            <span className="iconfont iconupload"></span>
+                            <span>上传</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/setting">
+                            <span className="iconfont iconsitting"></span>
+                            <span>设置</span>
                         </Link>
                     </li>
                     <li>
