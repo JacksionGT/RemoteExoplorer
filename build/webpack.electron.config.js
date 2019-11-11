@@ -17,7 +17,9 @@ const electronConfig = {
         contentBase: "./dist",
         port: 8081,
         open: false,
+        hot: true,
         clientLogLevel: 'error',
+        headers: { 'Access-Control-Allow-Origin': '*' },
         historyApiFallback: {
             rewrites: [
               { from: /./, to: '/' }

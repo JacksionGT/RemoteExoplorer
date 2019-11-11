@@ -18,7 +18,7 @@ body,textarea, input, button, select, keygen, legend{
     font:16px/1.14 arial simsun; color:#333; outline:0;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
-a,a:hover{color:#333;}
+a,a:hover{color:inherit;}
 
 html,body{
     min-height: 100vh;
@@ -32,18 +32,18 @@ body{
     min-height: calc(100vh - 40px);
     display: flex;
     position: relative;
+    user-select:none;
 }
 .container{
     border-radius: 5px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.671);
     width: 100%;
 }
 
 .bar{
     -webkit-app-region: drag;
     line-height: 2;
-    background: burlywood;
+    background: #ffffff4d;
     text-align: center;
 }
 .bar h1{

@@ -1,5 +1,6 @@
 // const electron = require('electron');
 const { app, BrowserWindow } = require('electron')
+const MenuBuilder  = require('./menu');
 
 function createWindow () {   
   // 创建浏览器窗口
@@ -18,6 +19,10 @@ function createWindow () {
   // 加载index.html文件
   win.loadURL("http://localhost:8081/")
   // win.loadFile('dist/index.html')
+
+  
+  const menuBuilder = new MenuBuilder(win);
+  menuBuilder.buildMenu();
 }
 
 app.on('ready', createWindow)

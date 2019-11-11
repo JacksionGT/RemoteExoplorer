@@ -1,10 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
     devtool: 'source-map',
-    entry: './src/index.js',
+    entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8081/dist',
+        'webpack/hot/only-dev-server',
+        './src/index.js'
+    ],
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js'
@@ -43,6 +49,7 @@ module.exports = {
                 removeComments: true, //移除HTML中的注释
                 // collapseWhitespace:true    //删除空白符与换行符 
             }
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }

@@ -1,0 +1,26 @@
+.uppage{
+    padding:40px 80px;
+}
+.uppage-title{
+    margin-bottom: 40px;
+}
+.uppage-uper{
+    height:calc(100vh - 300px);
+    border:2px dashed #000;
+    border-radius: 5px;
+    cursor: pointer;
+    em{
+        font-size: 80px;
+    }
+    p{
+        margin-top: 40px;
+        font-size: 16px;
+    }
+}
+.link-type{
+    border-radius:5px;
+    overflow: hidden;
+    button{
+        text-transform: none;
+    }
+}

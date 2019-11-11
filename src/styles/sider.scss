@@ -4,11 +4,10 @@
   transition: all .15s ease;
   position: relative;
   z-index: 2;
-  background: #ffffff00;
   &.active{
     width: 200px;
     margin-right: -140px;
-    background: #fff;
+    background: #FFF;
   }
 }
 
@@ -21,7 +20,7 @@
     a{
         display: block;
         &:hover{
-            background: #0000002b;
+            background: #00000080;
         }
     }
     .iconfont{
